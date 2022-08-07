@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">nba_players</string>
+    <string name="app_name">NBA players</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="players">Players</string>
+    <string name="player_last_name">Player last name</string>
+    <string name="app_version">App version</string>
+    <string name="player_position">Player position</string>
+    <string name="player_height">Player height</string>
+    <string name="player_weight">Player weight</string>
+    <string name="team">Team info:</string>
+    <string name="team_full_name">Team full name</string>
+    <string name="player">Player:</string>
+    <string name="player_first_name">Player first name</string>
+    <string name="player_name">Player name</string>
+    <string name="search_hint">Search player</string>
 </resources>
