@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/playersFragment">
+
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.example.nba_players.fragments.PlayersFragment"
+        android:label="Players"
+        tools:layout="@layout/fragment_players" >
+        <action
+            android:id="@+id/action_homeFragment_to_playerDetailsFragment"
+            app:destination="@id/playerDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.nba_players.fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" >
+    </fragment>
+    <fragment
+        android:id="@+id/playerDetailsFragment"
+        android:name="com.example.nba_players.fragments.PlayerDetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_player_details" />
+</navigation>

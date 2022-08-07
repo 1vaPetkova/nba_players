@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="player"
+            type="com.example.nba_players.viewModels.PlayerViewDto" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20sp"
+        android:orientation="vertical"
+        tools:context=".fragments.PlayerDetailsFragment">
+
+        <TextView
+            android:id="@+id/tv_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/player"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_player_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.firstName}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_player_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.lastName}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_player_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.position}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_player_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.height}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_player_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.weight}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/team"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_team_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.teamName}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_team_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.teamCity}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_team_conference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.teamConference}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_team_division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{player.teamDivision}"
+            android:textColor="@color/c_black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</layout>
