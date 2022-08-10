@@ -4,4 +4,4 @@
   - the list of player's names allows the user to get detailed information about a particular player when clicked on their name
 2. About tab: contains App version information
 # Used API as a data source: https://www.balldontlie.io/#introduction
-# HTTP client used: Retrofit
+# HTTP client used: Retrofit: https://square.github.io/retrofit/
