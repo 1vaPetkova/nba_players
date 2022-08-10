@@ -10,7 +10,7 @@ import retrofit2.awaitResponse
 class PlayerPagingSource(private val playerApi: PlayerApi, private val query: String) :
     PagingSource<Int, Player>() {
     companion object {
-        const val DEFAULT_PAGE_INDEX = 1
+        const val DEFAULT_PAGE_INDEX = 0
         val TAG: String = PlayerPagingSource::class.java.name
     }
 
